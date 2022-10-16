@@ -1,0 +1,25 @@
+<table class='table table-striped table-hover table-bordered'
+    <tr>
+        <th>Destinatario</th>
+        <th>Asunto</th>
+        <th>Mensaje</th>        
+        <th>Fecha</th>
+        <th>Hora</th>      
+
+    </tr>
+
+    {%for r in data%}
+    <tr>
+        <td>{{r['nombreusuario']}}</td>
+        <td>{{r['asunto']}}</td>
+        <td>{{r['mensaje']}}</td>        
+        <td>{{r['fecha']}}</td>
+        <td>{{r['hora']}}</td>
+        
+    </tr>
+
+    {%endfor%}
+
+  
+
+</table>
